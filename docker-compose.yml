@@ -7,7 +7,7 @@ services:
         uid: 1000
       context: ./
       dockerfile: Dockerfile
-    image: travellist
+    image: ru-web-front
     container_name: ru-web-front-app
     restart: unless-stopped
     working_dir: /var/www/
