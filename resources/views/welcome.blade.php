@@ -12,17 +12,17 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="javascripts/PIE.js"></script>
   <![endif]-->
-  <link href="{{ asset('favicon.ico') }}" rel="shortcut icon">
-  <link href="{{ asset('apple-touch-icon-144x144-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="144x144">
-  <link href="{{ asset('apple-touch-icon-114x114-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="114x114">
-  <link href="{{ asset('apple-touch-icon-72x72-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="72x72">
-  <link href="{{ asset('apple-touch-icon-57x57-precomposed.png') }}" rel="apple-touch-icon-precomposed">
-  <link href="{{ asset('stylesheets/bootstrap.css') }}" media="screen" rel="stylesheet" type="text/css" />
-  <link href="{{ asset('stylesheets/responsive.css') }}" media="screen" rel="stylesheet" type="text/css" />
-  <link href="{{ asset('stylesheets/font-awesome-all.css') }}" media="screen" rel="stylesheet" type="text/css" />
-  <link href="{{ asset('stylesheets/fancybox.css') }}" media="screen" rel="stylesheet" type="text/css" />
-  <link href="{{ asset('stylesheets/theme.css') }}" media="screen" rel="stylesheet" type="text/css" />
-  <link href="{{ asset('stylesheets/fonts.css') }}" media="screen" rel="stylesheet" type="text/css" />
+  <link href="favicon.ico" rel="shortcut icon">
+  <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
+  <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/responsive.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/font-awesome-all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/fancybox.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/fonts.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="wrapper">
