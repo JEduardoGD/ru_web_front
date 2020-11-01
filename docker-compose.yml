@@ -9,7 +9,7 @@ services:
       - ru_web_db
     working_dir: /usr/src/app
     environment:
-      SERVICE_NAME: blog-app
+      SERVICE_NAME: ru_web_app
       DB_CONNECTION: mysql
       DB_DRIVER: mysql
       DB_HOST: ru_web_db
@@ -17,7 +17,7 @@ services:
     networks:
       - app_network
 
-  blog_nginx:
+  ru_web_nginx:
     build:
       context: ./docker-nginx/. # The path of the Dockerfile
     volumes:
@@ -36,7 +36,7 @@ services:
     image: mysql:5
     restart: always
     environment:
-      MYSQL_DATABASE: blog
+      MYSQL_DATABASE: ru_web
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: root
       MYSQL_PASSWORD: root
