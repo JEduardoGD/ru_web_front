@@ -125,36 +125,40 @@
         <div class="row-fluid">
           <div class="span6 small-screen-center">
             <h3>
-              Smart
+              Radioexperimentadores
               <span class="light">
-                Box
+                Universitarios
               </span>
             </h3>
             <p>
-              +44 1234 56.78.910  |  info@somecompany.com
+              +52 55 55.55.55.55.55  |  info@radioexperimentadoresuniversitarios.mx
               <br>
-              Some St  777, 47000 Fancy town, Country.
+              Cto. Escolar 04360, C.U., Coyoacán, 04510 Ciudad de México, CDMX
               <br>
-              &copy; Copyright 2013
+              &copy; Copyright 2020
             </p>
           </div>
           <div class="span6">
             <ul class="unstyled inline text-right small-screen-center big social-icons">
+              <!--
               <li>
                 <a data-iconcolor="#00a0d1" href="#">
                   <i class="icon-twitter"></i>
                 </a>
               </li>
+            -->
               <li>
-                <a data-iconcolor="#3b5998" href="#">
+                <a data-iconcolor="#3b5998" href="https://www.facebook.com/areunam">
                   <i class="icon-facebook"></i>
                 </a>
               </li>
+              <!--
               <li>
                 <a data-iconcolor="#910101" href="#">
                   <i class="icon-pinterest"></i>
                 </a>
               </li>
+            -->
             </ul>
           </div>
         </div>
