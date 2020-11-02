@@ -38,7 +38,11 @@
             </a>
             <h1 class="brand">
               <a href="index.html">
-                Smart<span class="light">Box</span></a>
+                <div>
+                  <div style="text-align: center; background-image: url('img/escudo_ru.jpg'); background-repeat: no-repeat; width: 112px; height: 126px; background-size: contain;" align="center">&nbsp;</div>
+                </div>
+                <!--Smart<span class="light">Box</span>-->
+              </a>
             </h1>
             <div class="nav-collapse collapse">
               <ul class="nav pull-right">
