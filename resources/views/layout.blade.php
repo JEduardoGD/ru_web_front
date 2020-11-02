@@ -42,97 +42,68 @@
             </h1>
             <div class="nav-collapse collapse">
               <ul class="nav pull-right">
-                <li class=""><a href="./index.html">Home</a></li>
+                <li class=""><a href=".">Home</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages</a>
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Historia</a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="about.html">About Us</a>
+                      <a href="#">XE1UFI</a>
                     </li>
                     <li>
-                      <a href="services.html">Services</a>
+                      <a href="#">AREUNAM</a>
                     </li>
                     <li>
-                      <a href="faq.html">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="pricing.html">Pricing</a>
-                    </li>
-                    <li>
-                      <a href="docs.html">Docs</a>
-                    </li>
-                    <li>
-                      <a href="testimonials.html">Testimonials</a>
-                    </li>
-                    <li>
-                      <a href="404.html">404</a>
-                    </li>
-                    <li>
-                      <a href="sidebar-right.html">Right sidebar</a>
-                    </li>
-                    <li>
-                      <a href="sidebar-left.html">Left sidebar</a>
-                    </li>
-                    <li>
-                      <a href="fullbg.html">Full background</a>
-                    </li>
-                    <li>
-                      <a href="altpage.html">Alternative</a>
+                      <a href="#">RU</a>
                     </li>
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features</a>
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Miembros</a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="typography.html">Typography</a>
+                      <a href="#">Fundadores</a>
                     </li>
                     <li>
-                      <a href="elements.html">Elements</a>
+                      <a href="#">Activos</a>
                     </li>
                     <li>
-                      <a href="icons.html">Icons</a>
+                      <a href="#">Honorarios</a>
                     </li>
                     <li>
-                      <a href="tables.html">Tables</a>
+                      <a href="#">Benefactores</a>
                     </li>
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Estación</a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="blog.html">Normal blog</a>
+                      <a href="#">Fotos</a>
                     </li>
                     <li>
-                      <a href="timeline.html">Timeline</a>
-                    </li>
-                    <li>
-                      <a href="blog-fullwidth.html">Fullwidth blog</a>
-                    </li>
-                    <li>
-                      <a href="post.html">Single post</a>
+                      <a href="#">Videos</a>
                     </li>
                   </ul>
                 </li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio</a>
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sistemas</a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="portfolio-3col.html">Three Columns</a>
+                      <a href="#">HF / VHF</a>
                     </li>
                     <li>
-                      <a href="portfolio-4col.html">Four Columns</a>
+                      <a href="#">Winlink</a>
                     </li>
                     <li>
-                      <a href="portfolio-item.html">Single Item</a>
+                      <a href="#">APRS</a>
                     </li>
                     <li>
-                      <a href="portfolio-3col-squared.html">Squared Portfolio</a>
+                      <a href="#">IRLP</a>
                     </li>
                   </ul>
                 </li>
-                <li class=""><a href="contact.html">Contact</a></li>
+                <li class=""><a href="#">Cursos</a></li>
+                <li class=""><a href="#">Actividades</a></li>
               </ul>
             </div>
           </div>
