@@ -15,7 +15,6 @@ class CreateBlogImageHeaderTable extends Migration
     {
         Schema::create('blog_image_header', function (Blueprint $table) {
             $table->id();
-            $table->text('etag', 32);
             $table->longText('filename');
             $table->text('title', 255);
             $table->unsignedBigInteger('blog_post_id');

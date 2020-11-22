@@ -107,7 +107,7 @@
                   </ul>
                 </li>
                 <li class=""><a href="#">Cursos</a></li>
-                <li class=""><a href="#">Actividades</a></li>
+                <li class=""><a href="/actividades">Actividades</a></li>
               </ul>
             </div>
           </div>
