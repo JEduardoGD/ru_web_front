@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ActividadesController;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/actividades', [ActividadesController::class, 'index']);
+
+Route::get('/user/{id}', function($id) {
+    return User::find($id);
+});
