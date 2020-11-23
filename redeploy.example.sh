@@ -8,5 +8,5 @@ docker-compose exec app composer clearcache
 docker-compose exec app rm -rf vendor
 docker-compose exec app composer install
 docker-compose exec app php artisan migrate:refresh
+docker-compose exec app php artisan db:seed --class=DbSeeder
 docker-compose exec app php artisan key:generate
-
