@@ -26,6 +26,7 @@
         <div class="container-fluid">
           <div class="row-fluid">
             <div class="span9">
+            @forelse ($blog_posts as $blog_post)
               <article class="post row-fluid">
                 <div class="span2 post-info">
                   <div class="round-box box-small">
@@ -44,37 +45,25 @@
                   <div class="post-head">
                     <h2 class="small-screen-center">
                       <a href="post.html">
-                        You think water moves fast?
+                        {{ $blog_post->title }}
                       </a>
                     </h2>
                     <div class="post-extras">
-                      <i class="icon-tags"></i>
-                      <a href="#">PHP,</a>
-                      <a href="#">Web Design,</a>
-                      <a href="#">Bootstrap</a>
-                      <i class="icon-bookmark"></i>
-                      <a href="#">News,</a>
-                      <a href="#">Business</a>
-                      <i class="icon-comments"></i>
-                      <a href="post.html#comments">5 comments</a>
+                      @if ($blog_post->tags != "")
+                        <i class="icon-tags"></i>
+                        @foreach(explode(',', $blog_post->tags) as $tag)
+                          <a href="#">{{$tag ?? ''}},</a>
+                        @endforeach
+                      @endif
+                      <!--<a href="post.html#comments">5 comments</a>-->
                     </div>
                   </div>
                   <figure class="post-media">
                     <a href="post.html">
-                      <img alt="some image" src="images/assets/landscapes/landscape-3-800x400.jpg">
+                      <img alt="some image" src="{{ env('BUCKET_HTTP_URL') }}/blog/{{ $blog_post->id }}/headers/{{ $blog_post->image }}">
                     </a>
                   </figure>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                  </p>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
+                  {!! $blog_post->html !!}
                   <a class="more-link pull-right" href="post.html">
                     <strong>
                       Read
@@ -83,6 +72,9 @@
                   </a>
                 </div>
               </article>
+            @empty
+              <p>Por el momento no hay posts</p>
+            @endforelse
               <article class="post row-fluid">
                 <div class="span2 post-info">
                   <div class="round-box box-small">

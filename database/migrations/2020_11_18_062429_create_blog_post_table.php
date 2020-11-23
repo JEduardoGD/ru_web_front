@@ -19,6 +19,7 @@ class CreateBlogPostTable extends Migration
             $table->longText('html');
             $table->text('tags');
             $table->unsignedBigInteger('user_id');
+            $table->text('image');
             $table->foreign('user_id')->references('id')->on('users');
             $table->boolean('visible')->default(true);
             $table->dateTimeTz('visible_since')->useCurrent();

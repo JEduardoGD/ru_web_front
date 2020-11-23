@@ -2,7 +2,7 @@ INSERT INTO USERS (id, NAME, email, email_verified_at, PASSWORD, created_at) VAL
 
 INSERT INTO blog_theme (id, theme, created_at) VALUES (1, 'Primer tema blog', NOW());
 
-insert into blog_post (id, title, html, tags, user_id, visible, visible_since, created_at) VALUES(1, 'Primer blog titulo', '<h1>Primer blog titulo</h1>', 'primer,blog,titulo', 1, 1, NOW(), NOW());
+insert into blog_post (id, title, html, tags, user_id, image, visible, visible_since, created_at) VALUES(1, 'Primer blog titulo', '<p>Primer blog parrafo <b>negrita</b></p>', 'primer,blog,titulo', 1, 'landscape-1-800x400.jpg', 1, NOW(), NOW());
 
 insert into blog_theme_blog_post (id, blog_theme_id, blog_post_id) values (1, 1, 1);
 
