@@ -10,6 +10,9 @@ class ActividadesController extends Controller
 {
     public function index(){
         $blog_posts = DB::table('blog_post')->get();
+        foreach($blog_posts as $blog_post){
+            
+        }
         return view('actividades', ['blog_posts' => $blog_posts]);
     }
 }

@@ -10,11 +10,11 @@
               <img alt="some image" src="images/assets/landscapes/landscape-2-1250x300.jpg">
               <figcaption class="flex-caption">
                 <h1 class="super animated fadeinup delayed">
-                  News
+                  Noticias
                   <span class="lighter">
                     &amp;
                   </span>
-                  Posts
+                  Actividades
                 </h1>
               </figcaption>
             </figure>
@@ -58,12 +58,26 @@
                       <!--<a href="post.html#comments">5 comments</a>-->
                     </div>
                   </div>
+                  <div class="videoWrapper">
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FPumasMx%2Fvideos%2F436384950706214%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                  </div>
+                  <!--
+                  <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OikIfj7Hh9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                -->
+                  <!--
+                  <div class="videoWrapper">
+                    <iframe allowFullScreen="" frameborder="0" height="4 0" mozallowfullscreen="" src="http://player.vimeo.com/video/79713172?title=0&amp;amp;byline=0&amp;amp;color=42576a" webkitAllowFullScreen="" width="800"></iframe>
+                  </div>
+                -->
+                  <!--
                   <figure class="post-media">
                     <a href="post.html">
                       <img alt="some image" src="{{ env('BUCKET_HTTP_URL') }}/blog/{{ $blog_post->id }}/headers/{{ $blog_post->image }}">
                     </a>
-                  </figure>
-                  {!! $blog_post->html !!}
+                  </figure>-->
+                  {!! $blog_post->short_html !!}
                   <a class="more-link pull-right" href="post.html">
                     <strong>
                       Read
