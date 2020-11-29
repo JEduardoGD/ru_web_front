@@ -1,4 +1,4 @@
-INSERT INTO USERS (id, NAME, email, avatar, email_verified_at, PASSWORD, created_at) VALUES (1, 'admin', 'admin@admin', 'mumrita.jpg', NOW(), 'xxx',  NOW());
+INSERT INTO users (id, NAME, email, avatar, email_verified_at, PASSWORD, created_at) VALUES (1, 'admin', 'admin@admin', 'mumrita.jpg', NOW(), 'xxx',  NOW());
 
 INSERT INTO blog_theme (id, theme, created_at) VALUES (1, 'Primer tema blog', NOW());
 

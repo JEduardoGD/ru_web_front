@@ -38,8 +38,7 @@
         },
         "classmap": [
             "database/seeds",
-            "database/factories",
-            "app/Http/Controllers/ActividadesController"
+            "database/factories"
         ]
     },
     "autoload-dev": {
