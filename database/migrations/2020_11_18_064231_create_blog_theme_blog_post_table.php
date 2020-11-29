@@ -18,7 +18,7 @@ class CreateBlogThemeBlogPostTable extends Migration
             $table->unsignedBigInteger('blog_theme_id');
             $table->foreign('blog_theme_id')->references('id')->on('blog_theme');
             $table->unsignedBigInteger('blog_post_id');
-            $table->foreign('blog_post_id')->references('id')->on('blog_post');
+            $table->foreign('blog_post_id')->references('id')->on('blog_posts');
             $table->timestamps();
         });
     }

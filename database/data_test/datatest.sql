@@ -2,7 +2,7 @@ INSERT INTO users (id, NAME, email, avatar, email_verified_at, PASSWORD, created
 
 INSERT INTO blog_theme (id, theme, created_at) VALUES (1, 'Primer tema blog', NOW());
 
-insert into blog_post (id, title, short_html, html, tags, user_id, image, visible, visible_since, created_at) VALUES(1, 'Primer blog titulo', '
+insert into blog_posts (id, title, short_html, html, tags, user_id, image, visible, visible_since, created_at) VALUES(1, 'Primer blog titulo', '
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elementum tellus, ut congue arcu mattis eget. Nullam cursus semper urna nec tristique. Curabitur nunc purus, finibus laoreet quam in, volutpat tincidunt augue. Quisque ac ante nec lectus tempor luctus. Nullam pellentesque eu augue hendrerit egestas. Curabitur sed dui metus. Ut rhoncus aliquam magna a varius. Fusce a tincidunt nisi. Nunc porta sagittis arcu vel scelerisque. Nulla et feugiat enim. Aliquam placerat quam erat, in feugiat nulla aliquet eu.</p>
 <p>Suspendisse aliquet velit quis eros sagittis tempus. Pellentesque bibendum felis velit, ac imperdiet massa feugiat quis. Duis rutrum a dolor eu ullamcorper. Phasellus ornare nisi a justo hendrerit facilisis. Etiam consequat feugiat ultricies. Vivamus at ante nulla. Nulla aliquam sollicitudin augue, non auctor ex lobortis ac. Etiam eu tempor quam. Phasellus eu quam urna. Donec condimentum varius eros. Maecenas nec elit ut enim mollis ultricies. Suspendisse potenti. Cras erat odio, tempus eget leo vitae, faucibus placerat est.</p>
 ', '
@@ -83,4 +83,8 @@ insert into blog_theme_blog_post (id, blog_theme_id, blog_post_id) values (1, 1,
 INSERT INTO blog_image_header (id, filename, title, blog_post_id, created_at) VALUES (1, 'landscape-1-800x400.jpg', 'landscape-1-800x400', 1, NOW());
 INSERT INTO blog_image_header (id, filename, title, blog_post_id, created_at) VALUES (2, 'landscape-3-800x400.jpg', 'landscape-3-800x400', 1, NOW());
 INSERT INTO blog_image_header (id, filename, title, blog_post_id, created_at) VALUES (3, 'landscape-6-800x400.jpg', 'landscape-6-800x400', 1, NOW());
+
+INSERT INTO video_models (id, name, iframe_code, created_at) VALUES (1, 'youtube', '<iframe width="560" height="315" src="https://www.youtube.com/embed/[[id]]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', NOW());
+INSERT INTO video_models (id, name, iframe_code, created_at) VALUES (2, 'vimeo', '<iframe allowFullScreen="" frameborder="0" height="4 0" mozallowfullscreen="" src="http://player.vimeo.com/video/[[id]]?title=[[title]]&amp;amp;byline=0&amp;amp;color=42576a" webkitAllowFullScreen="" width="800"></iframe>', NOW());
+INSERT INTO video_models (id, name, iframe_code, created_at) VALUES (3, 'facebook', '<iframe src="[[id]]" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>', NOW());
 

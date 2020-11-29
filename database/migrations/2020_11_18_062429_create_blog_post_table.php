@@ -13,7 +13,7 @@ class CreateBlogPostTable extends Migration
      */
     public function up()
     {
-        Schema::create('blog_post', function (Blueprint $table) {
+        Schema::create('blog_posts', function (Blueprint $table) {
             $table->id();
             $table->text('title', 255)->nullable(false);
             $table->longText('short_html');
@@ -35,6 +35,6 @@ class CreateBlogPostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blog_post');
+        Schema::dropIfExists('blog_posts');
     }
 }
