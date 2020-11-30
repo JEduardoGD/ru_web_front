@@ -26,7 +26,7 @@
         <div class="container-fluid">
           <div class="row-fluid">
             <div class="span9">
-            @forelse ($xxxx as $blog_post)
+            @forelse ($blog_posts as $blog_post)
               <article class="post row-fluid">
                 <div class="span2 post-info">
                   <div class="round-box box-small">

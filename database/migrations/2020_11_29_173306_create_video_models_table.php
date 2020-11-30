@@ -16,7 +16,7 @@ class CreateVideoModelsTable extends Migration
         Schema::create('video_models', function (Blueprint $table) {
             $table->id();
             $table->string("name")->unique();
-            $table->string("iframe_code");
+            $table->longtext("iframe_code");
             $table->timestamps();
         });
     }

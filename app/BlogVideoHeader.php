@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class BlogImageHeader extends Model
+class BlogVideoHeader extends Model
 {
     public function blogPost()
     {

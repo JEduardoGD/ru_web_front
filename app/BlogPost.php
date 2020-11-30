@@ -6,8 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class BlogPost extends Model
 {
-    public function headerPhoto()
+    public function blogImageHeader()
     {
-        return $this->belongsTo(BlogImageHeader::class);
+        return $this->hasMany(BlogImageHeader::class);
+    }
+    
+    public function BlogVideoHeader()
+    {
+        return $this->hasMany(BlogVideoHeader::class);
     }
 }
