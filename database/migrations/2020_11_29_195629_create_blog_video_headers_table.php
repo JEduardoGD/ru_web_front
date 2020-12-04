@@ -16,7 +16,7 @@ class CreateBlogVideoHeadersTable extends Migration
         Schema::create('blog_video_headers', function (Blueprint $table) {
             $table->id();
             $table->string('video_code');
-            $table->string('video_title');
+            $table->string('video_title')->nullable();
             $table->unsignedBigInteger('blog_post_id');
             $table->foreign('blog_post_id')->references('id')->on('blog_posts');
             $table->unsignedBigInteger('video_models_id');

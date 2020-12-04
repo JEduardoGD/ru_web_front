@@ -35,10 +35,10 @@
                     </a>
                   </div>
                   <h5 class="text-center">
-                    John Doe
+                    {{ $blog_post->author }}
                   </h5>
                   <h5 class="text-center light">
-                    12 Jan 2013
+                    {{ $blog_post->date->format('d M y') }}
                   </h5>
                 </div>
                 <div class="span10 post-body">
@@ -58,139 +58,29 @@
                       <!--<a href="post.html#comments">5 comments</a>-->
                     </div>
                   </div>
-                  <div class="videoWrapper">
-                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FPumasMx%2Fvideos%2F436384950706214%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                  </div>
-                  <!--
-                  <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OikIfj7Hh9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                -->
-                  <!--
-                  <div class="videoWrapper">
-                    <iframe allowFullScreen="" frameborder="0" height="4 0" mozallowfullscreen="" src="http://player.vimeo.com/video/79713172?title=0&amp;amp;byline=0&amp;amp;color=42576a" webkitAllowFullScreen="" width="800"></iframe>
-                  </div>
-                -->
-                  <!--
+                  @if($blog_post->typeOfHeader == 'image')
                   <figure class="post-media">
                     <a href="post.html">
-                      <img alt="some image" src="{{ env('BUCKET_HTTP_URL') }}/blog/{{ $blog_post->id }}/headers/{{ $blog_post->image }}">
+                      <img alt="some image" src="{{ $blog_post->header }}">
                     </a>
-                  </figure>-->
+                  </figure>
+                  @elseif($blog_post->typeOfHeader == 'video')
+                  <div class="videoWrapper">
+                    {!! $blog_post->header !!}
+                  </div>
+                  @endif
                   {!! $blog_post->short_html !!}
                   <a class="more-link pull-right" href="post.html">
                     <strong>
-                      Read
+                      Leer
                     </strong>
-                    More
+                    más
                   </a>
                 </div>
               </article>
             @empty
               <p>Por el momento no hay posts</p>
             @endforelse
-              <article class="post row-fluid">
-                <div class="span2 post-info">
-                  <div class="round-box box-small">
-                    <a class="box-inner" href="post.html">
-                      <img alt="some image" class="img-circle" src="images/assets/people/man-2-300x300.jpg">
-                    </a>
-                  </div>
-                  <h5 class="text-center">
-                    Samuel Doe
-                  </h5>
-                  <h5 class="text-center light">
-                    10 Dec 2012
-                  </h5>
-                </div>
-                <div class="span10 post-body">
-                  <div class="post-head">
-                    <h2 class="small-screen-center">
-                      <a href="post.html">
-                        They called me Mr Glass.
-                      </a>
-                    </h2>
-                    <div class="post-extras">
-                      <i class="icon-tags"></i>
-                      <a href="#">Rails,</a>
-                      <a href="#">Web Design,</a>
-                      <a href="#">Bootstrap</a>
-                      <i class="icon-bookmark"></i>
-                      <a href="#">News,</a>
-                      <a href="#">Business</a>
-                      <i class="icon-comments"></i>
-                      <a href="post.html#comments">5 comments</a>
-                    </div>
-                  </div>
-                  <figure class="post-media">
-                    <a href="post.html">
-                      <img alt="some image" src="images/assets/landscapes/landscape-5-800x400.jpg">
-                    </a>
-                  </figure>
-                  <p>
-                    Phasellus quis tortor nulla. Mauris dictum dui et est iaculis consequat. Pellentesque facilisis faucibus arcu, eu fermentum tortor convallis a. n libero, rutrum quis blandit sit amet, cursus sit amet mi.
-                  </p>
-                  <p>
-                    Ut non velit tortor. Aliquam dictum mattis leo, vel laoreet turpis viverra sit amet. Integer fermentum augue at risus pretium id porttitor nisi pulvinar. Aliquam imperdiet quam ligula. Nulla facilisi. Duis eu arcu magna. Etiam neque leo, sodales eget ornare mollis, posuere a felis.
-                  </p>
-                  <a class="more-link pull-right" href="post.html">
-                    <strong>
-                      Read
-                    </strong>
-                    More
-                  </a>
-                </div>
-              </article>
-              <article class="post row-fluid">
-                <div class="span2 post-info">
-                  <div class="round-box box-small">
-                    <a class="box-inner" href="post.html">
-                      <img alt="some image" class="img-circle" src="images/assets/people/woman-1-300x300.jpg">
-                    </a>
-                  </div>
-                  <h5 class="text-center">
-                    Sara Doe
-                  </h5>
-                  <h5 class="text-center light">
-                    10 Dec 2012
-                  </h5>
-                </div>
-                <div class="span10 post-body">
-                  <div class="post-head">
-                    <h2 class="small-screen-center">
-                      <a href="post.html">
-                        Your bones don't break, mine do.
-                      </a>
-                    </h2>
-                    <div class="post-extras">
-                      <i class="icon-tags"></i>
-                      <a href="#">Django,</a>
-                      <a href="#">Web Design,</a>
-                      <a href="#">Bootstrap</a>
-                      <i class="icon-bookmark"></i>
-                      <a href="#">News,</a>
-                      <a href="#">Business</a>
-                      <i class="icon-comments"></i>
-                      <a href="post.html#comments">5 comments</a>
-                    </div>
-                  </div>
-                  <div class="videoWrapper">
-                    <iframe allowFullScreen="" frameborder="0" height="4 0" mozallowfullscreen="" src="http://player.vimeo.com/video/17914974?title=0&amp;amp;byline=0&amp;amp;color=42576a" webkitAllowFullScreen="" width="800"></iframe>
-                  </div>
-                  <p>
-                    Phasellus quis tortor nulla. Mauris dictum dui et est iaculis consequat. Pellentesque facilisis faucibus arcu, eu fermentum tortor convallis a. n libero, rutrum quis blandit sit amet, cursus sit amet mi. Ut non velit tortor. Aliquam dictum mattis leo, vel laoreet turpis viverra sit amet. Integer fermentum augue at risus pretium id porttitor nisi pulvinar.
-                  </p>
-                  <p>
-                    Aliquam imperdiet quam ligula. Nulla facilisi. Duis eu arcu magna. Etiam neque leo, sodales eget ornare mollis, posuere a felis.
-                  </p>
-                  <a class="more-link pull-right" href="post.html">
-                    <strong>
-                      Read
-                    </strong>
-                    More
-                  </a>
-                </div>
-              </article>
               <div class="row-fluid">
                 <div class="pagination pagination-small pagination-centered offset2 span10">
                   <ul>

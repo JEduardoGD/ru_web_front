@@ -1,3 +1,4 @@
+<?php setlocale(LC_ALL, 'es_MX'); ?>
 <!DOCTYPE html>
 <!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if (gt IE 8)]><!--> <html lang="en"> <!--<![endif]-->

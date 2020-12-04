@@ -3,16 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\BlogImageHeader;
+use App\BlogVideoHeader;
 
 class BlogPost extends Model
 {
-    public function blogImageHeader()
+    public function blogImageHeaders()
     {
-        return $this->hasMany(BlogImageHeader::class);
-    }
-    
-    public function BlogVideoHeader()
-    {
-        return $this->hasMany(BlogVideoHeader::class);
+        return $this->hasMany(BlogImageHeader::class, 'blog_post_id', 'id');
     }
 }
