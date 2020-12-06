@@ -11,19 +11,19 @@
   <meta content="yes" name="apple-mobile-web-app-capable">
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="javascripts/PIE.js"></script>
+    <script src="/javascripts/PIE.js"></script>
   <![endif]-->
   <link href="favicon.ico" rel="shortcut icon">
   <link href="apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
   <link href="apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
   <link href="apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
   <link href="apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
-  <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/responsive.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/font-awesome-all.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/fancybox.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/fonts.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/responsive.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/font-awesome-all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/fancybox.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/fonts.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="wrapper">
@@ -40,7 +40,7 @@
             <h1 class="brand">
               <a href="index.html">
                 <div>
-                  <div style="text-align: center; background-image: url('img/escudo_ru.jpg'); background-repeat: no-repeat; width: 112px; height: 126px; background-size: contain;" align="center">&nbsp;</div>
+                  <div style="text-align: center; background-image: url('/img/escudo_ru.jpg'); background-repeat: no-repeat; width: 112px; height: 126px; background-size: contain;" align="center">&nbsp;</div>
                 </div>
                 <!--Smart<span class="light">Box</span>-->
               </a>
@@ -166,13 +166,13 @@
       </div>
     </div>
   </footer>
-  <script src="javascripts/jquery.min.js" type="text/javascript"></script>
-  <script src="javascripts/bootstrap.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.flexslider-min.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.tweet.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
-  <script src="javascripts/jquery.fancybox-media.js" type="text/javascript"></script>
-  <script src="javascripts/script.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/bootstrap.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.flexslider-min.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.fancybox-media.js" type="text/javascript"></script>
+  <script src="/javascripts/script.js" type="text/javascript"></script>
 <script type="text/javascript">
 if (typeof gaJsHost == 'undefined') {
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

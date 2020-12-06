@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ActividadesController;
+use App\Http\Controllers\PostController;
 use App\User;
 
 /*
@@ -24,3 +25,5 @@ Route::get('/actividades', [ActividadesController::class, 'index']);
 Route::get('/user/{id}', function($id) {
     return User::find($id);
 });
+
+Route::get('/actividades/{title}', [PostController::class, 'index']);

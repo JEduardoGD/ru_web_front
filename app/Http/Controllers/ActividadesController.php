@@ -52,6 +52,7 @@ class ActividadesController extends Controller
             $newArrayBlog->header = $header;
             $newArrayBlog->short_html = $blog_post->short_html;
             $newArrayBlog->html = $blog_post->html;
+            $newArrayBlog->link = strtolower(urlencode(str_replace(' ', '-', $blog_post->title)));
             
             array_push($newArrayBlogs, $newArrayBlog);
         }
