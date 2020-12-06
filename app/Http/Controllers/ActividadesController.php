@@ -14,7 +14,7 @@ use App\User;
 class ActividadesController extends Controller
 {
     public function index(){
-        $blog_posts = BlogPost::all();
+        $blog_posts = BlogPost::orderBy('id', 'DESC')->get();
         
         $typeOfHeader = null;
         $header = null;

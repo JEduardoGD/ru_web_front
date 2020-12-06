@@ -82,6 +82,7 @@
               <p>Por el momento no hay posts</p>
             @endforelse
               <div class="row-fluid">
+                <!--
                 <div class="pagination pagination-small pagination-centered offset2 span10">
                   <ul>
                     <li class="disabled">
@@ -105,9 +106,11 @@
                     </li>
                   </ul>
                 </div>
+                -->
               </div>
             </div>
             <aside class="span3 sidebar">
+            <!--
               <div class="sidebar-widget widget_search">
                 <form>
                   <div class="input-append row-fluid">
@@ -119,6 +122,8 @@
                   </div>
                 </form>
               </div>
+              -->
+              <!--
               <div class="sidebar-widget widget_categories">
                 <h3 class="sidebar-header">Categories</h3>
                 <ul>
@@ -152,6 +157,8 @@
                   </li>
                 </ul>
               </div>
+              -->
+              <!--
               <div class="sidebar-widget widget_tag_cloud">
                 <h3 class="sidebar-header">Popular Tags</h3>
                 <ul>
@@ -197,6 +204,8 @@
                   </li>
                 </ul>
               </div>
+              -->
+              <!--
               <div class="sidebar-widget widget_recent_entries">
                 <h3 class="sidebar-header">Recent posts</h3>
                 <ul>
@@ -265,6 +274,8 @@
                   </li>
                 </ul>
               </div>
+              -->
+              <!--
               <div class="sidebar-widget widget_archive">
                 <h3 class="sidebar-header">Archive</h3>
                 <ul>
@@ -320,10 +331,13 @@
                   </li>
                 </ul>
               </div>
+              -->
+              <!--
               <div class="sidebar-widget widget_twitter">
                 <h3 class="sidebar-header">Twitter feed</h3>
                 <div class="twitter-feed"></div>
               </div>
+              -->
             </aside>
           </div>
         </div>
